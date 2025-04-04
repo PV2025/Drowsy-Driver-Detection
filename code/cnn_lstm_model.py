@@ -25,3 +25,9 @@ def build_model(input_shape=(30, 64, 64, 1)):
 
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     return model
+
+
+if __name__ == "__main__":
+    # Build the model and print summary
+    model = build_model()
+    model.summary()
