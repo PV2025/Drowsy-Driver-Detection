@@ -25,3 +25,10 @@ def compute_pnn50(rr_intervals):
     diff = np.abs(np.diff(rr_intervals))
     count = np.sum(diff > 50)
     return 100.0 * count / len(diff)
+
+
+if __name__ == "__main__":
+    rr_intervals = [800, 810, 790, 820, 805]
+    print("RMSSD:", compute_rmssd(rr_intervals))
+    print("pNN50:", compute_pnn50(rr_intervals))
+    print("LF/HF:", compute_lfhf_ratio(300, 150))
