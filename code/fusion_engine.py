@@ -22,3 +22,8 @@ def fuse_features(ear, hrv_score, entropy, weights=(0.4, 0.3, 0.3)):
 
     score = (weights[0] * norm_ear) + (weights[1] * norm_hrv) + (weights[2] * norm_entropy)
     return score
+
+
+if __name__ == "__main__":
+    final_score = fuse_features(ear=0.2, hrv_score=80, entropy=1.5)
+    print("Fatigue Score:", final_score)
