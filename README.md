@@ -61,3 +61,5 @@ python main.py
 
 This will launch the integrated pipeline using sample data and your configured CNN-LSTM model.
 
+📄 License: This project is licensed under the [MIT License](LICENSE).
+
