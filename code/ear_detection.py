@@ -1,10 +1,19 @@
-# EAR Detection logic placeholder
+"""
+Module: EAR Detection
+Detects eye aspect ratio (EAR) using eye landmarks.
+"""
 
 from scipy.spatial import distance as dist
 
 def compute_ear(eye):
     """
-    Compute the Eye Aspect Ratio (EAR) to detect drowsiness.
+    Calculates the Eye Aspect Ratio (EAR).
+    
+    Args:
+        eye (list of tuples): 6 eye landmark points [(x1, y1), ..., (x6, y6)]
+    
+    Returns:
+        float: EAR value
     """
     A = dist.euclidean(eye[1], eye[5])
     B = dist.euclidean(eye[2], eye[4])
