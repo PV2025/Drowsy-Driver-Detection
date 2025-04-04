@@ -20,3 +20,9 @@ def compute_ear(eye):
     C = dist.euclidean(eye[0], eye[3])
     ear = (A + B) / (2.0 * C)
     return ear
+
+
+if __name__ == "__main__":
+    sample_eye = [(1, 2), (2, 3), (3, 4), (1, 5), (2, 6), (3, 7)]
+    ear = compute_ear(sample_eye)
+    print("EAR:", ear)
