@@ -4,7 +4,7 @@ A hybrid CNN-LSTM based fatigue detection system using EAR, HRV, and Steering En
 
 If you use this repository or code in your research, please cite the corresponding paper:
 “Drowsy Driver Detection Using Multimodal Sensor Fusion and Deep Learning,” Paras Verma, 2025.
-GitHub: https://github.com/PV2025/Drowsy-Driver-Detection/
+GitHub: (https://github.com/Paras-Vermaa/Drowsy-Driver-Detection)
 
 ### 📊 Sample Data
 
@@ -41,7 +41,7 @@ GitHub: https://github.com/PV2025/Drowsy-Driver-Detection/
 ## 💻 Installation
 
 Clone the repository:
-https://github.com/PV2025/Drowsy-Driver-Detection/
+(https://github.com/Paras-Vermaa/Drowsy-Driver-Detection)
 
 
 Install required dependencies:
