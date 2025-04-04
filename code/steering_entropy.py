@@ -20,3 +20,11 @@ def compute_steering_entropy(steering_angles, bins=10):
     hist = hist[hist > 0]
     entropy = -np.sum(hist * np.log2(hist))
     return entropy
+
+
+if __name__ == "__main__":
+    # Example input: simulated steering angles
+    sample_angles = [2.3, 2.5, 2.7, 3.0, 3.5, 3.8, 4.0]
+    
+    entropy_score = compute_steering_entropy(sample_angles)
+    print("Steering Entropy:", entropy_score)
