@@ -36,3 +36,28 @@ GitHub: https://github.com/PV2025/Drowsy-Driver-Detection/
 | `figure7_feature_importance.png` | Feature contribution to fatigue detection |
 | `figure8_clustering_view.png` | Clustering visualization of Alert vs Fatigue |
 | `figure9_pca_projection.png` | PCA projection of feature space |
+
+
+## 💻 Installation
+
+Clone the repository:
+https://github.com/PV2025/Drowsy-Driver-Detection/
+
+
+Install required dependencies:
+
+pip install -r requirements.txt
+
+
+---
+
+## 🚀 Run the Main Program
+
+To execute the fatigue detection system:
+
+
+python main.py
+
+
+This will launch the integrated pipeline using sample data and your configured CNN-LSTM model.
+
