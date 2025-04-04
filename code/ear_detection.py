@@ -1,3 +1,13 @@
 # EAR Detection logic placeholder
-def compute_ear(eye_points):
-    pass  # To be implemented
+
+from scipy.spatial import distance as dist
+
+def compute_ear(eye):
+    """
+    Compute the Eye Aspect Ratio (EAR) to detect drowsiness.
+    """
+    A = dist.euclidean(eye[1], eye[5])
+    B = dist.euclidean(eye[2], eye[4])
+    C = dist.euclidean(eye[0], eye[3])
+    ear = (A + B) / (2.0 * C)
+    return ear
